@@ -479,6 +479,9 @@ body.dark-mode .feature-card svg{
   letter-spacing:1px;
   text-transform:uppercase;
 }
+body.dark-mode .section-title span{
+  color: #ffffff;
+}
 
 .section-title h2{
   font-size:3rem;
