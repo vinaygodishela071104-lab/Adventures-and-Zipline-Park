@@ -468,8 +468,6 @@ body.dark-mode .feature-card svg{
   background:var(--white);
 }
 
-/* TITLE */
-
 .section-title{
   text-align:center;
   margin-bottom:70px;
@@ -535,7 +533,11 @@ body.dark-mode .feature-card svg{
   box-shadow:0 20px 40px rgba(0,0,0,0.08);
 }
 
-
+body.dark-mode .choose-card{
+ background-color: white;
+  border:1px solid rgba(255,255,255,0.15);
+  color: black;
+}
 
 .choose-icon{
   width:85px;
@@ -650,14 +652,71 @@ margin-top: 20px;
 }
 
 
-/* RESPONSIVE */
-
 @media(max-width:992px){
 
 .hero{
   grid-template-columns:1fr;
 }
+.nav-btn{
+  display: block;
+  width: 80px;
+}
+.navbar{
+    width:100%;
+    padding:14px 12px;
+    overflow:hidden;
+  }
 
+  .navbar-inner{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:6px;
+  }
+
+  .logo{
+    font-size:20px;
+    flex-shrink:1;
+  }
+
+  .nav-actions{
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+
+  .rtl-btn{
+    padding:7px 10px;
+    font-size:11px;
+  }
+
+  .theme-btn{
+    width:34px;
+    height:34px;
+    font-size:14px;
+  }
+
+  .nav-btn{
+    padding:8px 12px;
+    font-size:12px;
+  }
+
+  .menu-toggle{
+   
+    display: block;
+  }
+  .nav-links.show{
+    display:flex;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+.hero-card{
+  width:350px;
+  padding-right: 10px;
+}
 .feature-grid{
   grid-template-columns:1fr 1fr;
 }
