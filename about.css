@@ -79,7 +79,9 @@ h1,h2,h3{
   backdrop-filter:blur(10px);
   transition:0.35s ease;
 }
-
+body.dark-mode .navbar{
+  background:rgba(17,17,17,0.92);
+}
 .navbar.scrolled{
   background:rgba(17,17,17,0.92);
   box-shadow:0 10px 30px rgba(0,0,0,0.18);
