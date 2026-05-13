@@ -49,28 +49,32 @@ section{
   align-items:center;
   padding:22px 8%;
   z-index:1000;
-  background:rgba(0,0,0,0.20);
+  background:whitesmoke;
   backdrop-filter:blur(10px);
   transition:0.35s ease;
+  color: black;
+  
 }
 body.dark-mode .navbar{
   background:rgba(17,17,17,0.92);
 }
 
-.navbar.scrolled{
-  background:rgba(17,17,17,0.92);
-  box-shadow:0 10px 30px rgba(0,0,0,0.18);
-}
+  /* .navbar.scrolled{
+    background:rgba(17,17,17,0.92);
+    box-shadow:0 10px 30px rgba(0,0,0,0.18);
+  } */
 
 .logo{
   font-family:'Outfit', sans-serif;
   font-size:30px;
-  font-weight:800;
-  color:#ffffff;
+  font-weight:700;
+  color:#000000;
   letter-spacing:1px;
   white-space:nowrap;
 }
-
+body.dark-mode .logo{
+  color:#ffffff;
+}
 .logo span{
   color:var(--primary);
 }
@@ -82,11 +86,14 @@ body.dark-mode .navbar{
 }
 
 .nav-links a{
-  color:#ffffff;
+  color:#000000;
   font-size:15px;
   transition:0.3s;
+  /* font-weight: bold; */
 }
-
+body.dark-mode .nav-links a{
+  color:#ffffff;
+} 
 .nav-links a:hover{
   color:var(--primary);
 }
@@ -119,6 +126,7 @@ body.dark-mode .navbar{
 .dropdown-menu a{
   display:block;
   padding:13px 20px;
+  color:white
 }
 
 .dropdown-menu a:hover{
@@ -135,7 +143,7 @@ body.dark-mode .navbar{
 .rtl-btn,
 .theme-btn{
   border:none;
-  background:rgba(255,255,255,0.12);
+  background:var(--primary);
   color:#ffffff;
   cursor:pointer;
   backdrop-filter:blur(8px);
@@ -200,7 +208,7 @@ body.rtl-mode{
 }
 
 
-/* HERO */
+
 
 .hero{
   min-height:100vh;
