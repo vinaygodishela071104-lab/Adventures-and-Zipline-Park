@@ -501,97 +501,6 @@ body.dark-mode .card-content h3{
 
 
 
-.pricing-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-  align-items:stretch;
-}
-
-.pricing-card{
-  background:#ffffff;
-  padding:45px;
-  border-radius:25px;
-  position:relative;
-  box-shadow:0 15px 35px rgba(0,0,0,0.08);
-  transition:0.4s;
-}
-
-.pricing-card:hover{
-  transform:translateY(-10px);
-}
-
-.pricing-card h3{
-  font-family:'Outfit', sans-serif;
-  font-size:28px;
-}
-
-.pricing-card h2{
-  font-family:'Outfit', sans-serif;
-  font-size:50px;
-  margin:20px 0 10px;
-}
-
-.pricing-card small{
-  color:#666666;
-}
-
-.pricing-card ul{
-  margin:30px 0 30px 0;
-}
-
-.pricing-card ul li{
-  margin-bottom:18px;
-  color:#666666;
-  line-height:1.7;
-}
-
-.plan-btn{
-  padding:14px 30px;
-  background:var(--secondary);
-  color:#ffffff;
-  border-radius:40px;
-}
-
-.plan-btn:hover{
-  background:#b8721f;
-}
-
-.featured{
-  background:var(--secondary);
-  color:#ffffff;
-  transform:scale(1.05);
-}
-
-.featured small,
-.featured ul li{
-  color:#dddddd;
-}
-
-.featured .plan-btn{
-  background:var(--primary);
-}
-
-.featured .plan-btn:hover{
-  background:#b8721f;
-}
-
-.badge{
-  position:absolute;
-  top:20px;
-  right:20px;
-  background:var(--primary);
-  color:#ffffff;
-  padding:8px 16px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:700;
-}
-
-body.rtl-mode .badge{
-  right:auto;
-  left:20px;
-}
 
 
 
@@ -796,7 +705,9 @@ margin-top: 20px;
   section{
     padding:80px 5%;
   }
-
+  .logo{
+    color: white;
+  }
 
 
   .navbar{

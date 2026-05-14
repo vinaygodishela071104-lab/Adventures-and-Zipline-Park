@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkyRush Services</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>SkyRush Dashboard</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="services.css">
-<link rel="icon" href="images/logo1-removebg-preview.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="dashboard.css" >
 </head>
 <body>
-
-
+  
   <header>
     <nav class="navbar">
       <a href="index.html" class="logo"><span>Sky</span>Rush</a>
@@ -31,8 +31,7 @@
         
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-         <li><a href="pricing1.html">Pricing</a></li>
-   
+        <li><a href="pricing1.html">Pricing</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
      
@@ -48,7 +47,7 @@
 
       <div class="menu-toggle">☰</div>
     </nav>
-    <div class="mobile-menu">
+      <div class="mobile-menu">
 
   <!-- MOBILE TOP ACTIONS -->
 
@@ -59,8 +58,12 @@
   <div class="mobile-dropdown">
 
     <div class="mobile-dropdown-toggle">
-      Home <span>▾</span>
-    </div>
+
+  <span>Home</span>
+
+  <span class="dropdown-arrow">▾</span>
+
+</div>
 
     <div class="mobile-dropdown-menu">
       <a href="index.html">Home 1</a>
@@ -79,227 +82,262 @@
 
   <a href="dashboard.html">Dashboard</a>
 
+ 
 
-
-  <a href="login.html">Login</a>
+ <a href="login.html" class="nav-btn">Login</a>
 
 </div>
   </header>
 
-<section class="hero">
 
-  <div class="hero-content">
+<div class="dashboard">
 
-    <h1>Adventure Starts <span>Here</span></h1>
+  <!-- SIDEBAR -->
 
-    <p>
-      Experience thrilling outdoor adventures with professional safety,
-      expert guidance, and unforgettable moments at SkyRush.
-    </p>
+  <div class="sidebar">
 
-    <a href="service1.html" class="hero-btn">Explore Now</a>
+    <div>
 
-  </div>
+      <a href="#" class="logo1">
+        <span>Sky</span>Rush
+      </a>
 
-</section>
+      <div class="menu">
 
+        <a href="#" class="active">Dashboard</a>
 
-<section class="services-section">
-   <div class="reveal">
-  <div class="section-title">
+        <a href="#">Bookings</a>
 
-    <h2>Our Services</h2>
+        <a href="#">Adventure Packages</a>
 
-    <p>
-      SkyRush delivers safe, exciting, and professionally guided outdoor adventure experiences for every explorer.
-    </p>
+        <a href="#">Trekking Routes</a>
 
-  </div>
+        <a href="#">Safety Guides</a>
 
-  <div class="services-grid">
+        <a href="#">Gallery</a>
 
-    
-    <div class="service-card">
+        <a href="#">Messages</a>
 
-      <div class="service-img">
-        <img src="images/g1.avif" alt="">
-      </div>
-
-      <div class="service-content">
-
-        <h3>Professional Safety Guidance</h3>
-
-        <p>
-          Our trained experts ensure every activity follows top safety standards for a secure adventure experience.
-        </p>
-
-        <a href="service1.html" class="service-btn">Learn More</a>
+        <a href="#">Settings</a>
 
       </div>
 
     </div>
 
-    <!-- Card 2 -->
-    <div class="service-card">
+    <div class="sidebar-bottom">
 
-      <div class="service-img">
-        <img src="images/g2.avif" alt="">
-      </div>
+      <h3>Adventure Reminder</h3>
 
-      <div class="service-content">
-
-        <h3>Guided Adventure Tours</h3>
-
-        <p>
-          Explore mountains, forests, and scenic destinations with experienced guides leading every journey.
-        </p>
-
-        <a href="service1.html" class="service-btn">Learn More</a>
-
-      </div>
-
-    </div>
-
-    <!-- Card 3 -->
-    <div class="service-card">
-
-      <div class="service-img">
-        <img src="images/g3.avif" alt="">
-      </div>
-
-      <div class="service-content">
-
-        <h3>Adventure Activity Assistance</h3>
-
-        <p>
-          Get complete support for ziplining, trekking, rafting, and other thrilling outdoor activities.
-        </p>
-
-        <a href="service1.html" class="service-btn">Learn More</a>
-
-      </div>
-
-    </div>
-
-    <!-- Card 4 -->
-    <div class="service-card">
-
-      <div class="service-img">
-        <img src="images/g4.jpg" alt="">
-      </div>
-
-      <div class="service-content">
-
-        <h3>Equipment Handling</h3>
-
-        <p>
-          We provide high-quality adventure equipment with professional handling and proper safety checks.
-        </p>
-
-        <a href="service1.html" class="service-btn">Learn More</a>
-
-      </div>
+      <p>
+        Carry safety gear and stay hydrated before starting
+        your next mountain adventure.
+      </p>
 
     </div>
 
   </div>
-  </div>
-</section>
 
+  <!-- MAIN -->
 
-<section class="safety">
- <div class="reveal">
-  <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=1400&auto=format&fit=crop">
- </div>
-  <div class="reveal">
-  <div class="safety-content">
+  <div class="main">
 
-    <h2>Safety Is Our Priority</h2>
+    <!-- TOPBAR -->
 
-    <p>
-      Every adventure at SkyRush is designed with advanced safety standards,
-      professional supervision, and secure adventure equipment.
-    </p>
+    <div class="topbar">
 
-    <div class="safety-points">
-      <div>Certified Adventure Equipment</div>
-      <div>Experienced Professional Trainers</div>
-      <div>Emergency Support Team</div>
-      <div>International Safety Standards</div>
-    </div>
-
-  </div>
- </div>
-
-</section>
-
-<!-- TIMELINE -->
-
-<section>
- <div class="reveal">
-  <div class="section-title">
-
-    <h2>Your Adventure Journey</h2>
-
-    <p>
-      Enjoy an exciting experience from registration to the final adventure moment.
-    </p>
-
-  </div>
-  </div>
- <div class="reveal">
-  <div class="timeline">
- <div class="reveal">
-    <div class="timeline-item">
-      <div class="timeline-box">
-        <h3>Arrival & Registration</h3>
-        <p>Check-in and prepare for your thrilling experience.</p>
+      <div>
+        <h1>Adventure Dashboard</h1>
+        <p>Welcome back to SkyRush Adventure Park</p>
       </div>
-    </div>
- </div>
- <div class="reveal">
-    <div class="timeline-item">
-      <div class="timeline-box">
-        <h3>Safety Briefing</h3>
-        <p>Professional guidance before the adventure begins.</p>
-      </div>
-    </div>
- </div>
-      <div class="reveal">
-    <div class="timeline-item">
-      <div class="timeline-box">
-        <h3>Adventure Activities</h3>
-        <p>Experience ziplining, climbing, and outdoor challenges.</p>
-      </div>
-    </div>
-    </div>
-     <div class="reveal">
 
-    <div class="timeline-item">
-      <div class="timeline-box">
-        <h3>Relax & Refresh</h3>
-        <p>Create unforgettable memories with scenic outdoor views.</p>
+      <div class="top-actions">
+
+        <div class="search-box">
+          <input type="text" placeholder="Search Adventures">
+        </div>
+
+        <div class="profile">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500&auto=format&fit=crop" alt="">
+        </div>
+
       </div>
+
     </div>
-     </div>
+
+    <!-- STATS -->
+
+    <div class="stats-grid">
+
+      <div class="stat-card">
+        <span>Total Adventures</span>
+        <h2>128</h2>
+        <p>Exciting adventure activities available this season.</p>
+      </div>
+
+      <div class="stat-card">
+        <span>Bookings</span>
+        <h2>542</h2>
+        <p>Adventure bookings successfully completed this month.</p>
+      </div>
+
+      <div class="stat-card">
+        <span>Active Treks</span>
+        <h2>24</h2>
+        <p>Mountain trekking journeys currently active today.</p>
+      </div>
+
+      <div class="stat-card">
+        <span>Happy Travelers</span>
+        <h2>8.9k</h2>
+        <p>Adventure lovers joined SkyRush experiences worldwide.</p>
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="dashboard-content">
+
+      <!-- BOOKINGS -->
+
+      <div class="bookings">
+
+        <div class="section-header">
+
+          <h2>Recent Adventure Bookings</h2>
+
+          <button>View All</button>
+
+        </div>
+
+        <div class="booking-card">
+
+          <div class="booking-left">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=500&auto=format&fit=crop" alt="">
+
+            <div class="booking-text">
+
+              <h3>Mountain Trekking</h3>
+
+              <p>Sunrise trekking experience for beginners.</p>
+
+            </div>
+
+          </div>
+
+          <div class="status active-status">
+            Confirmed
+          </div>
+
+        </div>
+
+        <div class="booking-card">
+
+          <div class="booking-left">
+
+            <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?q=80&w=500&auto=format&fit=crop" alt="">
+
+            <div class="booking-text">
+
+              <h3>Zipline Adventure</h3>
+
+              <p>Thrilling zipline ride across mountain valleys.</p>
+
+            </div>
+
+          </div>
+
+          <div class="status pending-status">
+            Pending
+          </div>
+
+        </div>
+
+        <div class="booking-card">
+
+          <div class="booking-left">
+
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=500&auto=format&fit=crop" alt="">
+
+            <div class="booking-text">
+
+              <h3>Forest Camping</h3>
+
+              <p>Weekend camping under the stars with guides.</p>
+
+            </div>
+
+          </div>
+
+          <div class="status active-status">
+            Confirmed
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="right-sidebar">
+
+        <div class="activity-card">
+
+          <h2>Recent Activities</h2>
+
+          <div class="activity">
+            <div>
+              <h4>New Trek Added</h4>
+              <p>Mountain Ridge Trail</p>
+            </div>
+            <span>2h ago</span>
+          </div>
+
+          <div class="activity">
+            <div>
+              <h4>Adventure Booked</h4>
+              <p>Zipline Extreme Ride</p>
+            </div>
+            <span>5h ago</span>
+          </div>
+
+          <div class="activity">
+            <div>
+              <h4>New Blog Published</h4>
+              <p>Top Sunset Trekking Spots</p>
+            </div>
+            <span>1d ago</span>
+          </div>
+
+        </div>
+
+        <div class="guide-card">
+
+          <h2>Adventure Guide</h2>
+
+          <div class="guide-box">
+
+            <h3>Safety First</h3>
+
+            <p>
+              Wear helmets, stay hydrated, and follow instructor
+              guidance during every SkyRush adventure activity.
+            </p>
+
+            <button>Explore Guide</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
- </div>
 
-</section>
-
-<!-- CTA -->
-
-<section class="cta">
-
-  <h2>Ready For Your Next Adventure?</h2>
-
-  <p>
-    Discover thrilling outdoor experiences and create unforgettable memories with SkyRush.
-  </p>
-
-  <a href="booking.html" class="cta-btn">Book Adventure</a>
-
-</section>
+</div>
 
   <footer>
     <div class="footer-grid">
@@ -328,14 +366,14 @@
       <div class="footer-section">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+            <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Gallery</a></li>
+        <li><a href="">Contact</a></li>
      
-        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="">Dashboard</a></li>
         </ul>
       </div>
        <div class="footer-section">
@@ -359,7 +397,7 @@
          
     </div>
 
-    <div class="footer-bottom">
+      <div class="footer-bottom">
       © 2026 SkyRush Adventure Park. All Rights Reserved.
     
     <div class="footer-legal">
@@ -370,9 +408,6 @@
     </div>
     </div>
   </footer>
-  <script src="services.js">
-
-  </script>
-
+ <script src="index.js"></script>
 </body>
 </html>

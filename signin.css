@@ -1,0 +1,291 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --primary:#d98c2f;
+  --dark:#111111;
+  --white:#ffffff;
+  --text:#bcbcbc;
+}
+
+body{
+  font-family:'Manrope',sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  position:relative;
+  background:#0f0f0f;
+}
+
+/* BACKGROUND */
+
+.background{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.background::before{
+  content:'';
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:rgba(217,140,47,0.16);
+  border-radius:50%;
+  top:-250px;
+  left:-200px;
+  filter:blur(80px);
+}
+
+.background::after{
+  content:'';
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:rgba(255,255,255,0.05);
+  border-radius:50%;
+  bottom:-200px;
+  right:-150px;
+  filter:blur(80px);
+}
+
+/* CONTAINER */
+
+.signup-container{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  z-index:10;
+}
+
+/* CARD */
+
+.signup-card{
+  width:700px;
+  height:610px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:38px;
+  padding:28px 32px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.35);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+/* LOGO */
+
+.logo{
+  text-decoration:none;
+  font-size:30px;
+  font-weight:800;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  padding-top: 20px;
+}
+
+.logo span{
+  color:var(--primary);
+}
+
+/* TEXT */
+
+.signup-text{
+  text-align:center;
+  margin-bottom:16px;
+}
+
+.signup-text h1{
+  color:#fff;
+  font-size:28px;
+  margin-bottom:8px;
+}
+
+.signup-text p{
+  color:var(--text);
+  line-height:1.6;
+  font-size:13px;
+}
+
+/* FORM */
+
+.signup-form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.form-group label{
+  color:#fff;
+  font-weight:600;
+  font-size:13px;
+}
+
+.signup-form input{
+  width:100%;
+  padding:12px 16px;
+  border:none;
+  outline:none;
+  border-radius:14px;
+  background:rgba(255,255,255,0.08);
+  color:#fff;
+  font-size:13px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.signup-form input::placeholder{
+  color:#9f9f9f;
+}
+
+/* TERMS */
+.terms{
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  gap:10px;
+  width:100%;
+  text-align:left;
+  color:#ccc;
+  font-size:12px;
+  line-height:1.5;
+}
+
+.terms p{
+  text-align:left;
+}
+
+.terms input{
+  accent-color:var(--primary);
+  margin-top:2px;
+  width:auto;
+  flex-shrink:0;
+}
+.terms a{
+  color:var(--primary);
+  text-decoration:none;
+}
+
+/* BUTTON */
+
+.signup-btn{
+  width:100%;
+  padding:13px;
+  border:none;
+  border-radius:14px;
+  background:var(--primary);
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+.signup-btn:hover{
+  transform:translateY(-3px);
+}
+
+/* DIVIDER */
+
+.divider{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:2px 0;
+}
+
+.divider::before,
+.divider::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:rgba(255,255,255,0.12);
+}
+
+.divider span{
+  color:#aaa;
+  font-size:11px;
+}
+
+/* SOCIAL */
+
+.social-login{
+  display:flex;
+  gap:12px;
+}
+
+.social-btn{
+  flex:1;
+  padding:11px;
+  border-radius:14px;
+  border:none;
+  background:rgba(255,255,255,0.08);
+  color:#fff;
+  cursor:pointer;
+  transition:0.4s;
+  font-weight:600;
+  font-size:13px;
+}
+
+.social-btn:hover{
+  background:rgba(255,255,255,0.15);
+}
+
+/* LOGIN LINK */
+
+.login-link{
+  text-align:center;
+  margin-top:12px;
+  color:#bbb;
+  font-size:12px;
+  padding-top: 15px;
+}
+
+.login-link a{
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.signup-card{
+  width:100%;
+  height:auto;
+  padding:26px 20px;
+}
+
+.form-grid{
+  grid-template-columns:1fr;
+}
+
+.social-login{
+  flex-direction:column;
+}
+
+}

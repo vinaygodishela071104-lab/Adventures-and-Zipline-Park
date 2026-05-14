@@ -1,0 +1,289 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --primary:#d98c2f;
+  --dark:#111111;
+  --white:#ffffff;
+  --text:#bcbcbc;
+}
+
+body{
+  font-family:'Manrope',sans-serif;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+  position:relative;
+  background:#0f0f0f;
+}
+
+/* BACKGROUND */
+
+.background{
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+
+.background::before{
+  content:'';
+  position:absolute;
+  width:700px;
+  height:700px;
+  background:rgba(217,140,47,0.18);
+  border-radius:50%;
+  top:-250px;
+  left:-200px;
+  filter:blur(80px);
+}
+
+.background::after{
+  content:'';
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:rgba(255,255,255,0.06);
+  border-radius:50%;
+  bottom:-200px;
+  right:-150px;
+  filter:blur(80px);
+}
+
+/* LOGIN CONTAINER */
+
+.login-container{
+  position:relative;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  z-index:10;
+}
+
+/* LOGIN CARD */
+
+.login-card{
+  width:600px;
+  height:600px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:40px;
+  padding:45px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.35);
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+/* LOGO */
+
+.logo{
+  text-decoration:none;
+  font-size:38px;
+  font-weight:800;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  padding-top: 20px;
+}
+
+.logo span{
+  color:var(--primary);
+}
+
+/* TEXT */
+
+.login-text{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.login-text h1{
+  color:#fff;
+  font-size:36px;
+  margin-bottom:12px;
+}
+
+.login-text p{
+  color:var(--text);
+  line-height:1.8;
+  font-size:15px;
+}
+
+/* FORM */
+
+.login-form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.form-group label{
+  color:#fff;
+  font-weight:600;
+  font-size:15px;
+}
+
+.login-form input{
+  width:100%;
+  padding:16px 20px;
+  border:none;
+  outline:none;
+  border-radius:18px;
+  background:rgba(255,255,255,0.08);
+  color:#fff;
+  font-size:15px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.login-form input::placeholder{
+  color:#aaa;
+}
+
+/* OPTIONS */
+
+.form-options{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.remember{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#ddd;
+  font-size:14px;
+}
+
+.remember input{
+  accent-color:var(--primary);
+}
+
+.forgot{
+  color:var(--primary);
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn{
+  width:100%;
+  padding:16px;
+  border:none;
+  border-radius:18px;
+  background:var(--primary);
+  color:#fff;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.4s;
+}
+
+.login-btn:hover{
+  transform:translateY(-5px);
+}
+
+/* DIVIDER */
+
+.divider{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin:5px 0;
+}
+
+.divider::before,
+.divider::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:rgba(255,255,255,0.12);
+}
+
+.divider span{
+  color:#aaa;
+  font-size:13px;
+}
+
+/* SOCIAL LOGIN */
+
+.social-login{
+  display:flex;
+  gap:18px;
+}
+
+.social-btn{
+  flex:1;
+  padding:14px;
+  border-radius:18px;
+  border:none;
+  background:rgba(255,255,255,0.08);
+  color:#fff;
+  cursor:pointer;
+  transition:0.4s;
+  font-weight:600;
+}
+
+.social-btn:hover{
+  background:rgba(255,255,255,0.15);
+}
+
+/* SIGNUP */
+
+.signup{
+  text-align:center;
+  margin-top:25px;
+  color:#bbb;
+  font-size:14px;
+}
+
+.signup a{
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.login-card{
+  width:100%;
+  height:auto;
+  padding:35px 25px;
+}
+
+.logo{
+  font-size:32px;
+}
+
+.login-text h1{
+  font-size:30px;
+}
+
+.social-login{
+  flex-direction:column;
+}
+
+}

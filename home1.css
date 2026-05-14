@@ -621,11 +621,32 @@ footer{
   border-top:1px solid #222222;
   padding-top:25px;
   color:#777777;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-section {
  width: 250px;
 }
+.footer-legal{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ 
 
+} 
+.footer-legal li{
+  list-style: none;
+  color: black;
+
+}
+.footer-legal a{
+  color: #777777;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.footer-legal a:hover{
+  color: var(--primary);
+} 
 .social-icons{
 display: flex;
 justify-content: space-around;
@@ -664,6 +685,7 @@ margin-top: 20px;
   opacity:1;
   transform:translateY(0);
 }
+
 
 /* =========================
 MOBILE RESPONSIVE FIX
