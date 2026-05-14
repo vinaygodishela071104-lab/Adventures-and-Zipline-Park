@@ -694,6 +694,9 @@ margin-top: 20px;
   opacity:1;
   transform:translateY(0);
 }
+.mobile-menu{
+  display:none;
+}
 
 
 @media(max-width:1024px){

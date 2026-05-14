@@ -8,22 +8,7 @@
       document.body.classList.toggle("rtl-mode");
     }
 
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
-    const navbar = document.querySelector(".navbar");
-    const navAnchors = document.querySelectorAll(".nav-links a");
-
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-      menuToggle.textContent = navLinks.classList.contains("show") ? "✕" : "☰";
-    });
-
-    navAnchors.forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("show");
-        menuToggle.textContent = "☰";
-      });
-    });
+  
 
     window.addEventListener("scroll", () => {
       navbar.classList.toggle("scrolled", window.scrollY > 40);
@@ -43,4 +28,23 @@
 
     window.addEventListener("scroll", revealOnScroll);
     window.addEventListener("load", revealOnScroll);
-    
+    const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".mobile-menu");
+
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+
+/* MOBILE DROPDOWN */
+
+const mobileDropdown = document.querySelector(".mobile-dropdown");
+
+const mobileDropdownToggle =
+document.querySelector(".mobile-dropdown-toggle");
+
+mobileDropdownToggle.addEventListener("click", () => {
+
+  mobileDropdown.classList.toggle("active");
+
+});

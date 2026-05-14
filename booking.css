@@ -531,49 +531,414 @@ margin-top: 20px;
   opacity:1;
   transform:translateY(0);
 }
-
-
-
-
-@media(max-width:1100px){
-
-.booking-hero,
-.booking-wrapper{
-  grid-template-columns:1fr;
+.mobile-menu{
+  display:none;
 }
 
-.hero-content h1{
-  font-size:55px;
+/* =========================
+   IPAD PRO (1024px - 1366px)
+========================= */
+@media(max-width:1366px){
+
+  section{
+    padding:80px 5%;
+  }
+
+  .navbar{
+    padding:18px 5%;
+  }
+
+  .booking-hero{
+    gap:40px;
+    padding:120px 5% 80px;
+  }
+
+  .hero-content h1{
+    font-size:58px;
+  }
+
+  .hero-image img{
+    height:560px;
+  }
+
+  .booking-wrapper{
+    gap:35px;
+  }
+
+  .booking-info,
+  .booking-form{
+    padding:45px;
+  }
+
+  .booking-info h2{
+    font-size:44px;
+  }
+
+  .form-top h2{
+    font-size:38px;
+  }
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+  }
 }
 
+
+/* =========================
+   IPAD MINI (768px - 1024px)
+========================= */
+
+@media(max-width:1024px){
+
+  body{
+    overflow-x:hidden;
+  }
+
+  .navbar{
+    padding:16px 5%;
+    background:#121212;
+  }
+
+  .nav-links{
+    display:none;
+  }
+
+  .rtl-btn{
+    display:none;
+  }
+
+  .nav-btn{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.08);
+
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+  }
+
+  /* MOBILE MENU */
+
+  .mobile-menu{
+
+    position:fixed;
+
+    top:74px;
+    left:0;
+
+    width:100%;
+    height:calc(100vh - 74px);
+
+    background:#121212;
+
+    z-index:99999;
+
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:5px;
+
+    overflow-y:auto;
+
+    transform:translateX(100%);
+    transition:0.4s ease;
+  }
+
+  .mobile-menu.active{
+    transform:translateX(0);
+  }
+  /* ===============================
+   MOBILE TOP BUTTONS
+================================= */
+
+.mobile-top-actions{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:20px;
 }
 
-@media(max-width:768px){
-
-.booking-hero{
-  padding-top:100px;
+.mobile-rtl,
+.mobile-theme{
+  display:flex !important;
 }
 
-.hero-content h1{
-  font-size:42px;
+/* ===============================
+   MOBILE DROPDOWN
+================================= */
+
+.mobile-dropdown{
+  width:100%;
 }
 
-.hero-image img{
-  height:450px;
+.mobile-dropdown-toggle{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  color:#ffffff;
+
+  padding:18px 16px;
+
+  border-bottom:1px solid rgba(255,255,255,0.08);
+
+  cursor:pointer;
+
+  font-size:15px;
+  font-weight:500;
 }
 
-.booking-info,
-.booking-form{
-  padding:35px 25px;
+.mobile-dropdown-menu{
+
+  max-height:0;
+  overflow:hidden;
+
+  transition:0.4s ease;
 }
 
-.booking-info h2,
-.form-top h2{
-  font-size:34px;
+.mobile-dropdown-menu a{
+
+  display:block;
+
+  padding:16px 28px;
+
+  background:rgba(255,255,255,0.03);
+
+  border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
-.form-grid{
-  grid-template-columns:1fr;
+.mobile-dropdown.active .mobile-dropdown-menu{
+  max-height:200px;
 }
 
+  .mobile-menu a{
+
+    color:#ffffff;
+
+    padding:18px 16px;
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
+    font-size:15px;
+    font-weight:500;
+
+    transition:0.3s ease;
+  }
+
+  .mobile-menu a:hover{
+    color:var(--primary);
+    padding-left:22px;
+  }
+
+  .mobile-btn{
+
+    margin-top:15px;
+
+    background:var(--primary);
+
+    border-radius:12px;
+
+    text-align:center;
+
+    color:#fff !important;
+
+    border:none !important;
+  }
+  .rtl-btn{
+  display:block;
+}
+.logo{
+  color: white;
+}
+
+  .booking-hero{
+    grid-template-columns:1fr;
+    padding:120px 5% 60px;
+    gap:40px;
+    text-align:center;
+  }
+
+  .hero-content h1{
+    font-size:50px;
+  }
+
+  .hero-content p{
+    font-size:16px;
+  }
+
+  .hero-stats{
+    justify-content:center;
+  }
+
+  .hero-image img{
+    height:500px;
+  }
+
+  .booking-wrapper{
+    grid-template-columns:1fr;
+  }
+
+  .booking-info,
+  .booking-form{
+    padding:40px;
+  }
+
+  .booking-info h2{
+    font-size:40px;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+  }
+
+  .footer-legal{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+}
+
+
+/* =========================
+   SAMSUNG GALAXY S8+
+========================= */
+@media(max-width:480px){
+
+  section{
+    padding:65px 5%;
+  }
+
+  .navbar{
+    padding:14px 5%;
+  }
+
+  .logo{
+    font-size:24px;
+  }
+
+  .nav-actions{
+    gap:8px;
+  }
+
+  .rtl-btn{
+    padding:8px 12px;
+    font-size:12px;
+  }
+
+  .theme-btn{
+    width:38px;
+    height:38px;
+    font-size:16px;
+  }
+
+  .menu-toggle{
+    width:38px;
+    height:38px;
+    font-size:24px;
+  }
+
+  .booking-hero{
+    padding:110px 5% 50px;
+    gap:30px;
+  }
+
+  .hero-content h1{
+    font-size:38px;
+    line-height:1.2;
+  }
+
+  .hero-content p{
+    font-size:15px;
+  }
+
+  .hero-stats{
+    flex-direction:column;
+  }
+
+  .hero-stats div{
+    width:100%;
+  }
+
+  .hero-image img{
+    height:360px;
+  }
+
+  .booking-info,
+  .booking-form{
+    padding:28px;
+    border-radius:28px;
+  }
+
+  .booking-info h2{
+    font-size:32px;
+  }
+
+  .form-top h2{
+    font-size:30px;
+  }
+
+  .highlight-card{
+    padding:22px;
+  }
+
+  .highlight-card h3{
+    font-size:20px;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea{
+    padding:16px 18px;
+    font-size:14px;
+  }
+
+  .booking-form button{
+    padding:16px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    
+  }
+
+  .footer-section{
+    width:100%;
+  }
+
+ 
+  .footer-bottom{
+    flex-direction:column;
+    gap:15px;
+   
+  }
+
+  .footer-legal{
+    flex-wrap:wrap;
+    gap:15px;
+  }
 }

@@ -264,26 +264,222 @@ body{
   font-weight:700;
 }
 
-/* RESPONSIVE */
+/* =========================
+   iPad Pro (1024px - 1366px)
+========================= */
 
-@media(max-width:768px){
+@media screen and (max-width:1366px){
 
-.login-card{
-  width:100%;
-  height:auto;
-  padding:35px 25px;
+  .login-card{
+    width:580px;
+    height:auto;
+    padding:40px;
+  }
+
+  .login-text h1{
+    font-size:34px;
+  }
+
+  .login-text p{
+    font-size:14px;
+  }
+
+  .login-form{
+    gap:16px;
+  }
+
+  .social-login{
+    gap:14px;
+  }
+
 }
 
-.logo{
-  font-size:32px;
+/* =========================
+   iPad Mini (768px - 1023px)
+========================= */
+
+@media screen and (max-width:1023px){
+
+  body{
+    overflow-y:auto;
+    padding:40px 20px;
+  }
+
+  .background::before{
+    width:500px;
+    height:500px;
+    top:-180px;
+    left:-150px;
+  }
+
+  .background::after{
+    width:450px;
+    height:450px;
+    bottom:-150px;
+    right:-120px;
+  }
+
+  .login-card{
+    width:100%;
+    max-width:520px;
+    height:auto;
+    padding:38px 32px;
+    border-radius:32px;
+  }
+
+  .logo{
+    font-size:34px;
+    padding-top:10px;
+  }
+
+  .login-text{
+    margin-bottom:24px;
+  }
+
+  .login-text h1{
+    font-size:30px;
+  }
+
+  .login-text p{
+    font-size:14px;
+    line-height:1.7;
+  }
+
+  .login-form input{
+    padding:15px 18px;
+    font-size:14px;
+  }
+
+  .login-btn{
+    padding:15px;
+    font-size:15px;
+  }
+
+  .social-btn{
+    padding:13px;
+    font-size:14px;
+  }
+
 }
 
-.login-text h1{
-  font-size:30px;
-}
+/* =========================
+   Samsung Galaxy S8+ (360px - 740px)
+========================= */
 
-.social-login{
-  flex-direction:column;
-}
+@media screen and (max-width:740px){
+
+  body{
+    overflow-y:auto;
+    align-items:flex-start;
+    padding:25px 15px;
+  }
+
+  .background::before{
+    width:320px;
+    height:320px;
+    top:-120px;
+    left:-100px;
+    filter:blur(60px);
+  }
+
+  .background::after{
+    width:280px;
+    height:280px;
+    bottom:-100px;
+    right:-90px;
+    filter:blur(60px);
+  }
+
+  .login-container{
+    padding:10px;
+  }
+
+  .login-card{
+    width:100%;
+    height:auto;
+    padding:30px 22px;
+    border-radius:28px;
+  }
+
+  .logo{
+    font-size:30px;
+    padding-top:0;
+  }
+
+  .login-text{
+    margin-bottom:20px;
+  }
+
+  .login-text h1{
+    font-size:26px;
+  }
+
+  .login-text p{
+    font-size:13px;
+    line-height:1.6;
+  }
+
+  .login-form{
+    gap:15px;
+  }
+
+  .form-group{
+    gap:8px;
+  }
+
+  .form-group label{
+    font-size:14px;
+  }
+
+  .login-form input{
+    padding:14px 16px;
+    border-radius:14px;
+    font-size:14px;
+  }
+
+  .form-options{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .remember{
+    font-size:13px;
+  }
+
+  .forgot{
+    font-size:13px;
+  }
+
+  .login-btn{
+    padding:14px;
+    font-size:15px;
+    border-radius:14px;
+  }
+
+  .divider{
+    margin:2px 0;
+  }
+
+  .divider span{
+    font-size:12px;
+  }
+
+  .social-login{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .social-btn{
+    width:100%;
+    padding:13px;
+    font-size:14px;
+    border-radius:14px;
+  }
+
+  .signup{
+    margin-top:18px;
+    font-size:13px;
+  }
 
 }

@@ -1,16 +1,8 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const mobileMenu = document.querySelector(".mobile-menu");
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".mobile-menu");
 
-menuToggle.addEventListener("click", () => {
-
-  mobileMenu.classList.toggle("active");
-
-  if(mobileMenu.classList.contains("active")){
-    menuToggle.innerHTML = "✕";
-  }else{
-    menuToggle.innerHTML = "☰";
-  }
-
+toggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
 });
 
 
@@ -26,7 +18,6 @@ mobileDropdownToggle.addEventListener("click", () => {
   mobileDropdown.classList.toggle("active");
 
 });
-
 
 /* THEME */
 

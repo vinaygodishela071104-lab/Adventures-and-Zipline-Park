@@ -11,7 +11,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-
+<link rel="icon" href="images/logo1-removebg-preview.png" type="image/png">
 
 <link rel="stylesheet" href="pricing1.css">
 </head>
@@ -46,9 +46,10 @@
         <button class="rtl-btn" onclick="toggleRTL()">RTL</button>
         <button class="theme-btn" onclick="toggleTheme()">☾</button>
         <a href="login.html" class="nav-btn">Login</a>
+         <div class="menu-toggle">☰</div>
       </div>
 
-      <div class="menu-toggle">☰</div>
+      
     </nav>
      <div class="mobile-menu">
 
@@ -78,8 +79,10 @@
   <a href="about.html">About</a>
 
   <a href="services.html">Services</a>
+  <a href="pricing1.html">Pricing</a>
 
   <a href="blog.html">Blog</a>
+
 
   <a href="contact.html">Contact</a>
 
@@ -87,14 +90,14 @@
 
   <a href="booking.html" class="mobile-btn">Book Now</a>
 
-  <a href="login.html">Login</a>
+  <a href="login.html" class="mobile-btn">Login</a>
 
 </div>
   </header>
 
 
 <section class="pricing-hero">
-
+<div class="reveal">
   <div class="hero-content">
 
     <span>Adventure Pricing</span>
@@ -116,19 +119,20 @@
     </div>
 
   </div>
-
+</div>
+<div class="reveal">
   <div class="hero-image">
 
     <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="">
 
   </div>
-
+</div>
 </section>
 
 <!-- PRICING SECTION -->
 
 <section class="pricing-section">
-
+<div class="reveal">
   <div class="section-title">
 
     <span>Pricing Plans</span>
@@ -141,7 +145,8 @@
     </p>
 
   </div>
-
+</div>
+<div class="reveal">
   <div class="pricing-grid">
 
     <!-- CARD 1 -->
@@ -169,7 +174,7 @@
 
       </div>
 
-      <button>Choose Plan</button>
+      <button onclick="document.location='booking.html'">Choose Plan</button>
 
     </div>
 
@@ -200,7 +205,7 @@
 
       </div>
 
-      <button>Choose Plan</button>
+      <button onclick="document.location='booking.html'">Choose Plan</button>
 
     </div>
 
@@ -229,18 +234,19 @@
 
       </div>
 
-      <button>Choose Plan</button>
+      <button onclick="document.location='booking.html'">Choose Plan</button>
 
     </div>
 
   </div>
+</div>
 
 </section>
 
 <!-- BENEFITS SECTION -->
 
 <section class="benefits">
-
+<div class="reveal">
   <div class="benefit-wrapper">
 
     <div class="benefit-title">
@@ -289,6 +295,7 @@
     </div>
 
   </div>
+</div>
 
 </section>
 
