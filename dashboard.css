@@ -210,7 +210,7 @@ body.rtl-mode{
   display:grid;
   grid-template-columns:280px 1fr;
   min-height:100vh;
-  margin-top: 60px;
+ 
 }
 
 /* SIDEBAR */
