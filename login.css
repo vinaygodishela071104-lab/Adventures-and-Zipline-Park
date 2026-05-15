@@ -391,13 +391,35 @@ body.rtl-mode .nav-actions{
 /* =========================
    iPad Pro (1024px - 1366px)
 ========================= */
+/* =========================
+   IPAD PRO (1024px - 1366px)
+========================= */
 
 @media screen and (max-width:1366px){
 
+  body{
+    overflow:auto;
+    padding:40px 20px;
+  }
+
+  .login-container{
+    padding:30px 20px;
+  }
+
   .login-card{
     width:580px;
+    min-height:620px;
     height:auto;
     padding:40px;
+    border-radius:35px;
+  }
+
+  .logo{
+    font-size:34px;
+  }
+
+  .login-text{
+    margin-bottom:24px;
   }
 
   .login-text h1{
@@ -406,58 +428,75 @@ body.rtl-mode .nav-actions{
 
   .login-text p{
     font-size:14px;
+    line-height:1.8;
   }
 
   .login-form{
     gap:16px;
   }
 
+  .login-form input{
+    padding:15px 18px;
+  }
+
+  .login-btn{
+    padding:15px;
+  }
+
   .social-login{
     gap:14px;
+  }
+
+  .social-btn{
+    padding:13px;
+  }
+
+  .nav-actions{
+    top:25px;
+    right:25px;
   }
 
 }
 
 /* =========================
-   iPad Mini (768px - 1023px)
+   IPAD MINI (768px - 1024px)
 ========================= */
 
-@media screen and (max-width:1023px){
+@media screen and (max-width:1024px){
 
   body{
-    overflow-y:auto;
-    padding:40px 20px;
+    overflow:auto;
+    padding:30px 15px;
   }
 
   .background::before{
     width:500px;
     height:500px;
     top:-180px;
-    left:-150px;
+    left:-180px;
   }
 
   .background::after{
     width:450px;
     height:450px;
-    bottom:-150px;
-    right:-120px;
+    bottom:-180px;
+    right:-180px;
+  }
+
+  .login-container{
+    padding:20px;
   }
 
   .login-card{
     width:100%;
     max-width:520px;
-    height:auto;
-    padding:38px 32px;
-    border-radius:32px;
+    min-height:auto;
+    padding:35px;
+    border-radius:30px;
   }
 
   .logo{
-    font-size:34px;
-    padding-top:10px;
-  }
-
-  .login-text{
-    margin-bottom:24px;
+    font-size:32px;
   }
 
   .login-text h1{
@@ -466,11 +505,14 @@ body.rtl-mode .nav-actions{
 
   .login-text p{
     font-size:14px;
-    line-height:1.7;
+  }
+
+  .form-group label{
+    font-size:14px;
   }
 
   .login-form input{
-    padding:15px 18px;
+    padding:15px 16px;
     font-size:14px;
   }
 
@@ -479,72 +521,97 @@ body.rtl-mode .nav-actions{
     font-size:15px;
   }
 
+  .social-login{
+    flex-direction:column;
+    gap:14px;
+  }
+
   .social-btn{
-    padding:13px;
+    width:100%;
+  }
+
+  .nav-actions{
+    top:20px;
+    right:20px;
+    gap:12px;
+  }
+
+  .rtl-btn,
+  .theme-btn{
+    width:44px;
+    height:44px;
     font-size:14px;
+  }
+
+  body.rtl-mode .nav-actions{
+    left:20px;
+    right:auto;
   }
 
 }
 
 /* =========================
-   Samsung Galaxy S8+ (360px - 740px)
+   SAMSUNG GALAXY S8+
+   (360px - 480px)
 ========================= */
 
-@media screen and (max-width:740px){
+@media screen and (max-width:480px){
 
   body{
-    overflow-y:auto;
+    overflow:auto;
+    padding:20px 12px;
     align-items:flex-start;
-    padding:25px 15px;
   }
 
   .background::before{
-    width:320px;
-    height:320px;
+    width:350px;
+    height:350px;
     top:-120px;
-    left:-100px;
+    left:-120px;
     filter:blur(60px);
   }
 
   .background::after{
-    width:280px;
-    height:280px;
+    width:300px;
+    height:300px;
     bottom:-100px;
-    right:-90px;
+    right:-100px;
     filter:blur(60px);
   }
 
   .login-container{
-    padding:10px;
+    padding:80px 0 30px;
   }
 
   .login-card{
     width:100%;
-    height:auto;
-    padding:30px 22px;
+    padding:28px 22px;
     border-radius:28px;
+    min-height:auto;
+    margin:0;
   }
 
   .logo{
-    font-size:30px;
-    padding-top:0;
+    font-size:28px;
+    padding-top:10px;
   }
 
   .login-text{
-    margin-bottom:20px;
+    margin-bottom:22px;
   }
 
   .login-text h1{
     font-size:26px;
+    line-height:1.3;
   }
 
   .login-text p{
     font-size:13px;
-    line-height:1.6;
+    line-height:1.7;
   }
 
   .login-form{
-    gap:15px;
+    gap:14px;
   }
 
   .form-group{
@@ -552,13 +619,13 @@ body.rtl-mode .nav-actions{
   }
 
   .form-group label{
-    font-size:14px;
+    font-size:13px;
   }
 
   .login-form input{
-    padding:14px 16px;
-    border-radius:14px;
+    padding:14px 15px;
     font-size:14px;
+    border-radius:14px;
   }
 
   .form-options{
@@ -577,16 +644,12 @@ body.rtl-mode .nav-actions{
 
   .login-btn{
     padding:14px;
-    font-size:15px;
     border-radius:14px;
+    font-size:14px;
   }
 
   .divider{
     margin:2px 0;
-  }
-
-  .divider span{
-    font-size:12px;
   }
 
   .social-login{
@@ -597,13 +660,32 @@ body.rtl-mode .nav-actions{
   .social-btn{
     width:100%;
     padding:13px;
-    font-size:14px;
     border-radius:14px;
+    font-size:14px;
   }
 
   .signup{
-    margin-top:18px;
+    margin-top:20px;
     font-size:13px;
+    line-height:1.7;
+  }
+
+  .nav-actions{
+    top:18px;
+    right:18px;
+    gap:10px;
+  }
+
+  .rtl-btn,
+  .theme-btn{
+    width:40px;
+    height:40px;
+    font-size:13px;
+  }
+
+  body.rtl-mode .nav-actions{
+    left:18px;
+    right:auto;
   }
 
 }

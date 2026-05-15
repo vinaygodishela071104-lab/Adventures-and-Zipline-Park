@@ -464,59 +464,124 @@ body.rtl-mode .login-link{
 /* =========================
    DARK MODE
 ========================= */
-
 /* =========================
    IPAD PRO (1024px - 1366px)
 ========================= */
-@media (max-width:1366px){
+
+@media screen and (max-width:1366px){
+
+  body{
+    overflow:auto;
+    padding:40px 20px;
+  }
+
+  .signup-container{
+    padding:30px 20px;
+  }
 
   .signup-card{
     width:650px;
     height:auto;
     padding:32px;
+    border-radius:34px;
+  }
+
+  .logo{
+    font-size:32px;
+  }
+
+  .signup-text{
+    margin-bottom:18px;
   }
 
   .signup-text h1{
-    font-size:26px;
+    font-size:30px;
+  }
+
+  .signup-text p{
+    font-size:13px;
+    line-height:1.7;
   }
 
   .signup-form{
     gap:14px;
   }
 
-  .social-btn{
-    font-size:12px;
+  .form-grid{
+    gap:14px;
   }
+
+  .signup-form input{
+    padding:13px 16px;
+  }
+
+  .signup-btn{
+    padding:14px;
+  }
+
+  .social-login{
+    gap:14px;
+  }
+
+  .social-btn{
+    padding:12px;
+  }
+
+  .nav-actions{
+    top:25px;
+    right:25px;
+  }
+
+  body.rtl-mode .nav-actions{
+    left:25px;
+    right:auto;
+  }
+
 }
 
 /* =========================
    IPAD MINI (768px - 1024px)
 ========================= */
-@media (max-width:1024px){
+
+@media screen and (max-width:1024px){
 
   body{
-    overflow-y:auto;
-    padding:40px 0;
+    overflow:auto;
+    padding:30px 15px;
+  }
+
+  .background::before{
+    width:500px;
+    height:500px;
+    top:-180px;
+    left:-180px;
+  }
+
+  .background::after{
+    width:450px;
+    height:450px;
+    bottom:-180px;
+    right:-180px;
   }
 
   .signup-container{
-    padding:30px;
+    padding:20px;
   }
 
   .signup-card{
     width:100%;
-    max-width:620px;
+    max-width:560px;
     height:auto;
-    padding:35px 28px;
+    padding:30px;
     border-radius:30px;
   }
 
   .logo{
-    font-size:28px;
+    font-size:30px;
   }
 
   .signup-text h1{
-    font-size:24px;
+    font-size:28px;
   }
 
   .signup-text p{
@@ -525,72 +590,113 @@ body.rtl-mode .login-link{
 
   .form-grid{
     grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .form-group label{
+    font-size:13px;
   }
 
   .signup-form input{
-    padding:14px 16px;
+    padding:13px 15px;
+    font-size:13px;
+  }
+
+  .signup-btn{
+    padding:14px;
+    font-size:14px;
   }
 
   .social-login{
     flex-direction:column;
+    gap:12px;
   }
 
   .social-btn{
     width:100%;
   }
+
+  .nav-actions{
+    top:20px;
+    right:20px;
+    gap:12px;
+  }
+
+  .rtl-btn,
+  .theme-btn{
+    width:44px;
+    height:44px;
+    font-size:14px;
+  }
+
+  body.rtl-mode .nav-actions{
+    left:20px;
+    right:auto;
+  }
+
 }
 
 /* =========================
-   SAMSUNG GALAXY S8+ (360px - 480px)
+   SAMSUNG GALAXY S8+
+   (360px - 480px)
 ========================= */
-@media (max-width:480px){
+
+@media screen and (max-width:480px){
 
   body{
-    overflow-y:auto;
-    padding:20px 0;
+    overflow:auto;
+    align-items:flex-start;
+    padding:20px 12px;
   }
 
   .background::before{
-    width:400px;
-    height:400px;
-    top:-150px;
-    left:-120px;
+    width:320px;
+    height:320px;
+    top:-100px;
+    left:-100px;
+    filter:blur(60px);
   }
 
   .background::after{
-    width:350px;
-    height:350px;
-    bottom:-120px;
-    right:-100px;
+    width:280px;
+    height:280px;
+    bottom:-80px;
+    right:-80px;
+    filter:blur(60px);
   }
 
   .signup-container{
-    padding:15px;
+    padding:80px 0 30px;
   }
 
   .signup-card{
     width:100%;
     height:auto;
-    padding:26px 20px;
-    border-radius:24px;
+    padding:24px 20px;
+    border-radius:26px;
   }
 
   .logo{
-    font-size:24px;
+    font-size:26px;
     padding-top:10px;
   }
 
   .signup-text{
-    margin-bottom:14px;
+    margin-bottom:16px;
   }
 
   .signup-text h1{
-    font-size:22px;
+    font-size:24px;
+    line-height:1.3;
   }
 
   .signup-text p{
     font-size:12px;
-    line-height:1.5;
+    line-height:1.7;
+  }
+
+  .signup-form{
+    gap:12px;
   }
 
   .form-grid{
@@ -598,12 +704,12 @@ body.rtl-mode .login-link{
     gap:10px;
   }
 
-  .form-group label{
-    font-size:12px;
+  .form-group{
+    gap:5px;
   }
 
-  .signup-form{
-    gap:10px;
+  .form-group label{
+    font-size:12px;
   }
 
   .signup-form input{
@@ -614,12 +720,17 @@ body.rtl-mode .login-link{
 
   .terms{
     font-size:11px;
-    gap:8px;
+    line-height:1.6;
   }
 
   .signup-btn{
-    padding:12px;
+    padding:13px;
     font-size:13px;
+    border-radius:12px;
+  }
+
+  .divider{
+    margin:0;
   }
 
   .divider span{
@@ -635,10 +746,32 @@ body.rtl-mode .login-link{
     width:100%;
     padding:12px;
     font-size:12px;
+    border-radius:12px;
   }
 
   .login-link{
+    margin-top:10px;
     font-size:11px;
-    margin-top:8px;
+    line-height:1.6;
   }
+
+  .nav-actions{
+    top:18px;
+    right:18px;
+    gap:10px;
+  }
+
+  .rtl-btn,
+  .theme-btn{
+    width:40px;
+    height:40px;
+    font-size:13px;
+  }
+
+  body.rtl-mode .nav-actions{
+    left:18px;
+    right:auto;
+    top: 5px;
+  }
+
 }

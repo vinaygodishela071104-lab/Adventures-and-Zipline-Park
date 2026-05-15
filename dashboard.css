@@ -254,8 +254,7 @@ body.rtl-mode{
   font-weight:600;
 }
 
-.menu a:hover,
-.menu a.active{
+.menu a:hover{
   background:var(--primary);
   color:#fff;
   transform:translateX(5px);
