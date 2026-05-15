@@ -137,10 +137,10 @@ body.dark-mode .navbar{
   align-items:center;
   padding:22px 8%;
   z-index:1000;
-  background:whitesmoke;
-  backdrop-filter:blur(10px);
+ background:rgba(31, 30, 30, 0.45);
+backdrop-filter:blur(18px);
   transition:0.35s ease;
-  color: black;
+  color: rgb(235, 235, 235);
 }
 
 /* .navbar.scrolled{
@@ -152,7 +152,7 @@ body.dark-mode .navbar{
   font-family:'Outfit', sans-serif;
   font-size:30px;
   font-weight:800;
-  color:#000000;
+  color:#ffffff;
   letter-spacing:1px;
   white-space:nowrap;
 }
@@ -171,7 +171,7 @@ body.dark-mode .logo{
 }
 
 .nav-links a{
-  color:#000000;
+  color:#fffcfc;
   font-size:15px;
 /* font-weight: bold; */
   transition:0.3s;
@@ -277,19 +277,20 @@ body.dark-mode .nav-links a{
 
 .hero{
   min-height:100vh;
-  background-image:url('images/bg1.avif');
+  background-image:url('images/ballon2.jpg');
   background-size:cover;
   background-position:center;
   position:relative;
   display:flex;
   align-items:center;
   padding-top:120px;
+  margin-top: 50px;
 }
 
 .hero-overlay{
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,0.60);
+  background:rgba(0,0,0,0.70);
   pointer-events:none;
   z-index:1;
 }

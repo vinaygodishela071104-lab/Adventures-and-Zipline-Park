@@ -269,6 +269,202 @@ body{
   text-decoration:none;
   font-weight:700;
 }
+
+.nav-actions{
+  position:absolute;
+  top:30px;
+  right:35px;
+
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.rtl-btn,
+.theme-btn{
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.4s;
+  font-size:15px;
+}
+
+.rtl-btn:hover,
+.theme-btn:hover{
+  transform:translateY(-4px);
+}
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode{
+  background:#f4f1ea;
+}
+
+/* CARD */
+
+body.dark-mode .signup-card{
+  background:#ffffff;
+  border:1px solid rgba(0,0,0,0.06);
+  box-shadow:0 25px 60px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+
+body.dark-mode .logo{
+  color:#111;
+}
+
+/* TEXT */
+
+body.dark-mode .signup-text h1{
+  color:#111;
+}
+
+body.dark-mode .signup-text p{
+  color:#555;
+}
+
+/* LABELS */
+
+body.dark-mode .form-group label{
+  color:#111;
+}
+
+/* INPUTS */
+
+body.dark-mode .signup-form input{
+  background:#f3f3f3;
+  border:1px solid #e4e4e4;
+  color:#111;
+}
+
+body.dark-mode .signup-form input::placeholder{
+  color:#777;
+}
+
+/* TERMS */
+
+body.dark-mode .terms{
+  color:#444;
+}
+
+/* DIVIDER */
+
+body.dark-mode .divider span{
+  color:#666;
+}
+
+body.dark-mode .divider::before,
+body.dark-mode .divider::after{
+  background:#ddd;
+}
+
+/* SOCIAL BUTTONS */
+
+body.dark-mode .social-btn{
+  background:#f2f2f2;
+  color:#111;
+}
+
+body.dark-mode .social-btn:hover{
+  background:#e8e8e8;
+}
+
+/* LOGIN LINK */
+
+body.dark-mode .login-link{
+  color:#444;
+}
+
+/* BACKGROUND GLOW */
+
+body.dark-mode .background::before{
+  background:rgba(217,140,47,0.10);
+}
+
+body.dark-mode .background::after{
+  background:rgba(0,0,0,0.04);
+}
+/* =========================
+   RTL MODE
+========================= */
+
+body.rtl-mode{
+  direction:rtl;
+}
+
+/* NAV BUTTONS */
+
+body.rtl-mode .nav-actions{
+  left:35px;
+  right:auto;
+}
+
+/* LOGO */
+
+body.rtl-mode .logo{
+  flex-direction:row-reverse;
+}
+
+/* TEXT */
+
+body.rtl-mode .signup-text{
+  text-align:right;
+}
+
+/* FORM */
+
+body.rtl-mode .signup-form{
+  direction:rtl;
+}
+
+body.rtl-mode .form-group{
+  text-align:right;
+}
+
+body.rtl-mode .signup-form input{
+  text-align:right;
+}
+
+/* TERMS */
+
+body.rtl-mode .terms{
+  flex-direction:row-reverse;
+  text-align:right;
+}
+
+body.rtl-mode .terms p{
+  text-align:right;
+}
+
+/* DIVIDER */
+
+body.rtl-mode .divider{
+  flex-direction:row-reverse;
+}
+
+/* SOCIAL BUTTONS */
+
+body.rtl-mode .social-login{
+  flex-direction:row-reverse;
+}
+
+/* LOGIN LINK */
+
+body.rtl-mode .login-link{
+  text-align:right;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
 /* =========================
    IPAD PRO (1024px - 1366px)
 ========================= */

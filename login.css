@@ -72,7 +72,7 @@ body{
 
 .login-card{
   width:600px;
-  height:580px;
+  height:600px;
   background:rgba(255,255,255,0.08);
   backdrop-filter:blur(18px);
   border:1px solid rgba(255,255,255,0.08);
@@ -263,6 +263,129 @@ body{
   color:var(--primary);
   text-decoration:none;
   font-weight:700;
+}
+/* =========================
+   RTL + DARK MODE BUTTONS
+========================= */
+
+.nav-actions{
+  position:absolute;
+  top:30px;
+  right:35px;
+
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.rtl-btn,
+.theme-btn{
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.4s;
+  font-size:15px;
+}
+
+.rtl-btn:hover,
+.theme-btn:hover{
+  transform:translateY(-4px);
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode{
+  background:#f4f1ea;
+}
+
+body.dark-mode .login-card{
+  background:#ffffff;
+  border:1px solid rgba(0,0,0,0.06);
+  box-shadow:0 25px 60px rgba(0,0,0,0.08);
+}
+
+body.dark-mode .logo{
+  color:#111;
+}
+
+body.dark-mode .login-text h1{
+  color:#111;
+}
+
+body.dark-mode .login-text p{
+  color:#555;
+}
+
+body.dark-mode .form-group label{
+  color:#111;
+}
+
+body.dark-mode .login-form input{
+  background:#f3f3f3;
+  border:1px solid #e5e5e5;
+  color:#111;
+}
+
+body.dark-mode .login-form input::placeholder{
+  color:#777;
+}
+
+body.dark-mode .remember{
+  color:#333;
+}
+
+body.dark-mode .divider span{
+  color:#555;
+}
+
+body.dark-mode .divider::before,
+body.dark-mode .divider::after{
+  background:#ddd;
+}
+
+body.dark-mode .social-btn{
+  background:#f2f2f2;
+  color:#111;
+}
+
+body.dark-mode .social-btn:hover{
+  background:#e7e7e7;
+}
+
+body.dark-mode .signup{
+  color:#444;
+}
+ 
+
+
+body.rtl-mode{
+  direction:rtl;
+}
+
+body.rtl-mode .login-form,
+body.rtl-mode .login-text,
+body.rtl-mode .signup{
+  text-align:right;
+}
+
+body.rtl-mode .form-options{
+  flex-direction:row-reverse;
+}
+
+body.rtl-mode .remember{
+  flex-direction:row-reverse;
+}
+
+body.rtl-mode .nav-actions{
+  left:35px;
+  right:auto;
 }
 
 /* =========================
